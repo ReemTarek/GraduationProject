@@ -91,9 +91,8 @@ QPair<ld,ld> Car::moveToTarget(double xtarget, double ytarget, int dir)
    x0=pos.rx(), y0 = pos.ry();
    ld thetaRad = theta*PI / 180;
    ld x = xtarget - x0,  y = ytarget - y0, v = hypot(x, y)/t*dir;
-
-    ld b = sin(thetaRad), a = cos(thetaRad), c = v*b, d = v * a, e = v * b - y;
-    ld A = (e*e + (x-d)*(x-d)), B = 2*e*d+2*c*(x-d), C = d*d-v*v+c*c;
+   ld b = sin(thetaRad), a = cos(thetaRad), c = v*b, d = v * a, e = v * b - y;
+   ld A = (e*e + (x-d)*(x-d)), B = 2*e*d+2*c*(x-d), C = d*d-v*v+c*c;
     if(B*B < 4*A*C){
         cout << "NO";
         return{-1, -1};
@@ -102,14 +101,28 @@ QPair<ld,ld> Car::moveToTarget(double xtarget, double ytarget, int dir)
         ld alphaPos = (-B+sqrt(B*B-4*A*C)) / (2*A);
         ld alphaNeg = (-B-sqrt(B*B-4*A*C)) / (2*A);
         ld g = thetaRad+alphaPos*(t-1);
+        ld gd = thetaRad+alphaNeg*(t-1);
         ld xp=v/alphaPos*sin(g)-v/alphaPos*sin(thetaRad)+v*cos(thetaRad);
         ld yp = -v/alphaPos*cos(g)+v/alphaPos*cos(thetaRad)+v*sin(thetaRad);
+        ld xpd = v/alphaNeg*sin(gd)-v/alphaNeg*sin(thetaRad)+v*cos(thetaRad);
+        ld ypd=-v/alphaNeg*cos(gd)+v/alphaNeg*cos(thetaRad)+v*sin(thetaRad);
         ld phi=atan(alphaPos*wheelBase/v)*180/PI;
-        cout <<alphaPos*180/PI<<" "<< xp << " " << yp << endl;
-        cout << phi;
-      //  if(fabs(xp-x)<=5 && fabs(yp-y)<=5)
-        run(v, phi, t);
-        return {v, phi};
+        ld phid = atan(alphaNeg*wheelBase/v)*180/PI;
+        ld d1 = hypot(xp-x, yp-y);
+        ld d2 = hypot(xpd-x,ypd-y);
+      if(d2<d1){
+          cout <<alphaNeg*180/PI<<" "<< xpd << " " << ypd << endl;
+          cout << phid;
+
+          run(v, phid, t);
+          return {v, phid};
+
+    }else{
+          cout <<alphaPos*180/PI<<" "<< xp << " " << yp << endl;
+          cout << phi;
+          run(v, phi, t);
+          return {v, phi};
+       }
     }
 
 }
