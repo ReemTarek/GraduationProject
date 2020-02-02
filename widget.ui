@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>915</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>1500</width>
+     <height>500</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="FreeSlot">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>530</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Free Slot 0</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="TargetSlot">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>530</y>
+     <width>111</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Target Slot 0</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BusySlot">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>530</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Busy Slot 0</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="Obstacle">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>530</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Obstacle</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="TargetSlot_2">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>560</y>
+     <width>111</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Target slot 45</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="TargetSlot_3">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>590</y>
+     <width>111</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Target Slot -45</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="TargetSlot_4">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>620</y>
+     <width>111</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Target Slot 90</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="FreeSlot_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>560</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Free Slot 45</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="FreeSlot_3">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>590</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Free Slot -45</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="FreeSlot_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>620</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Free Slot 90</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BusySlot_2">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>560</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Busy Slot 45</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BusySlot_3">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>590</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Busy Slot -45</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="BusySlot_4">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>620</y>
+     <width>101</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Busy Slot 90</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>620</y>
+     <width>89</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Run</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="v">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>530</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="phi">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>560</y>
+     <width>91</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="dt">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>590</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="movetotarget">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>590</y>
+     <width>131</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>move to target</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="moveToTarget">
+   <property name="geometry">
+    <rect>
+     <x>530</x>
+     <y>560</y>
+     <width>91</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="verticalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>450</x>
+     <y>560</y>
+     <width>67</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>direction</string>
+   </property>
+  </widget>
+  <zorder>TargetSlot_4</zorder>
+  <zorder>graphicsView</zorder>
+  <zorder>FreeSlot</zorder>
+  <zorder>TargetSlot</zorder>
+  <zorder>BusySlot</zorder>
+  <zorder>Obstacle</zorder>
+  <zorder>TargetSlot_2</zorder>
+  <zorder>TargetSlot_3</zorder>
+  <zorder>FreeSlot_2</zorder>
+  <zorder>FreeSlot_3</zorder>
+  <zorder>FreeSlot_4</zorder>
+  <zorder>BusySlot_2</zorder>
+  <zorder>BusySlot_3</zorder>
+  <zorder>BusySlot_4</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>v</zorder>
+  <zorder>phi</zorder>
+  <zorder>dt</zorder>
+  <zorder>movetotarget</zorder>
+  <zorder>moveToTarget</zorder>
+  <zorder>label</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>Run()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>409</x>
+     <y>620</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>597</x>
+     <y>519</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_ResetCarPos_clicked()</slot>
+  <slot>view_click()</slot>
+  <slot>move_left()</slot>
+  <slot>move_down()</slot>
+  <slot>move_right()</slot>
+  <slot>move_up()</slot>
+  <slot>on_Change_Direction_clicked()</slot>
+  <slot>Run()</slot>
+  <slot>on_move_to_target_clicked()</slot>
+ </slots>
+</ui>
